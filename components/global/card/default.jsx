@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 const CardImage = styled.figure`
+    margin: 0;
     img {    
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
