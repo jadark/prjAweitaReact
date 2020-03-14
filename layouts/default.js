@@ -17,13 +17,33 @@ const WrapperBody = styled.div`
     background-color:#fff;
     padding: 20px 20px 10px;
     
+    .wrapperFlex {
+      position: relative;      
+    }
+    
     @media (min-width: 768px) {
         padding: 15px 15px 10px;
+        
+        .wrapperFlex {
+            display: flex;
+        }
+        
+        .col-page {
+            flex-grow: 2.0645;
+            flex-basis: 0;
+            margin-right: 20px;
+            &:last-child {
+                flex-grow: 1;
+                margin-right: 0;
+            }
+        }
     }
     
     @media (min-width: 999px) {
     
     }
+    
+    
 `;
 
 export default class DefaultLayout extends React.PureComponent {
