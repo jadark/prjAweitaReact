@@ -7,13 +7,19 @@ import Footer from "../components/global/footer/default";
 import Header from "../components/global/header/default";
 
 const ContainerBody = styled.main`
+  @font-face {
+    font-family: 'lemon_milkbold';
+    src: url('./fonts/lemonmilk-bold-webfont.woff2') format('woff2'),
+        url('./fonts/lemonmilk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 `;
 
 const WrapperBody = styled.div`
     margin: auto;
     max-width: 1000px;
     width: 100%;
-    
     background-color:#fff;
     padding: 20px 20px 10px;
     
@@ -35,6 +41,10 @@ const WrapperBody = styled.div`
             &:last-child {
                 flex-grow: 1;
                 margin-right: 0;
+            }
+            h2{
+              color:coral;
+              font-family: 'lemon_milkbold';
             }
         }
     }

@@ -23,7 +23,7 @@ const Home = () => {
     <Title>Home Page</Title>
     <div className="wrapperFlex">
       <div className="col-page">
-        <h2>columna 1</h2>
+        <h2>COLUMNA 1</h2>
         <Card data={data}/>
       </div>
       <div className="col-page">
