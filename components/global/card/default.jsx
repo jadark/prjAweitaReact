@@ -10,7 +10,8 @@ const CardImage = styled.figure`
         border-bottom-right-radius: 5px;
     }
     .card-image {
-        border-bottom: ${props => (`12px solid ${props.color ? props.color : "#c0c0c0"}`)}
+        border-bottom: ${props => (`12px solid ${props.color ? props.color : "#c0c0c0"}`)};
+        display: block;
     }
     
     .card-title {

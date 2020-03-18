@@ -5,7 +5,23 @@ import Badge from "../global/badge/default";
 import Card from "../global/card/default";
 
 const ContainerListSection = styled.section`
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    
+    .wrapperListSection {
+        margin-top: 15px;
+        
+        .title-listSection {
+            color: #444444;
+            font-family: 'lemon_milkbold';
+            text-transform: uppercase;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .wrapperListSection {
+            display: flex;
+        }
+    }
 `
 
 const ListSection = (props) => {
@@ -21,8 +37,19 @@ const ListSection = (props) => {
   return <ContainerListSection className={'comp_listSection'}>
       <Badge float={false}
              color={'#ff3785'}
-             format={'f-1'}/>
-      <Card data={data} float={false}/>
+             slug={'/tecnologia'}
+             format={'f-3'}/>
+      <div className="wrapperListSection">
+          <div className={'col-6'}>
+              <Card data={data} float={false}/>
+              <h3 className={'title-listSection'}>{data.title}</h3>
+          </div>
+          <div className={'col-6'}>
+              <Card data={data} float={false}/>
+              <h3 className={'title-listSection'}>{data.title}</h3>
+          </div>
+      </div>
+
   </ContainerListSection>
 }
 
