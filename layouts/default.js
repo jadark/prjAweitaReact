@@ -17,8 +17,8 @@ const ContainerBody = styled.main`
 `;
 
 const WrapperBody = styled.div`
-    background-color: #eee;
-    //background-color:#fff;
+    //background-color: #eee;
+    background-color:#fff;
     margin: auto;
     max-width: 1000px;
     padding: 20px 20px 10px;

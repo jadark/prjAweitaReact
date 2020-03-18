@@ -8,6 +8,9 @@ const ListArticle = (props) => {
                slug={'/tecnologia'}
                format={'f-2'}/>
         <MediaObject/>
+        <MediaObject/>
+        <MediaObject/>
+        <MediaObject/>
     </article>
 };
 
