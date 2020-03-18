@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../layouts/default";
 import Card from "../components/global/card/default";
 import ListSection from "../components/listSection/default";
+import ListArticle from "../components/listArticle/default";
 
 const Title = styled.h1`
   font-size: 35px;
@@ -23,6 +24,7 @@ const Home = () => {
 
   return <Layout>
     <Title>Home Page</Title>
+    <img src={'./images/home/ads_middle.jpg'}/>
     <div className="wrapperFlex">
       <div className="col-page">
         <h2>COLUMNA 1</h2>
@@ -34,7 +36,10 @@ const Home = () => {
       </div>
       <div className="col-page">
         <h2>columna 2</h2>
-        <Card data={data} float={true}/>
+        <ListArticle/>
+        <img src={'./images/home/AD_300x600(Middle2).png'}/>
+        <ListArticle/>
+        <img src={'./images/home/AD_300x250_2.png'}/>
       </div>
     </div>
   </Layout>
