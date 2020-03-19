@@ -5,6 +5,7 @@ import Layout from "../layouts/default";
 import Card from "../components/global/card/default";
 import ListSection from "../components/listSection/default";
 import ListArticle from "../components/listArticle/default";
+import Spotlight from "../components/spotlight/default";
 
 const Title = styled.h1`
   font-size: 35px;
@@ -24,18 +25,17 @@ const Home = () => {
 
   return <Layout>
     <Title>Home Page</Title>
+    <Spotlight/>
     <img src={'./images/home/ads_middle.jpg'}/>
     <div className="wrapperFlex">
       <div className="col-page">
-        <h2>COLUMNA 1</h2>
-        <Card data={data} float={false}/>
+        {/*<Card data={data} float={false}/>*/}
         <ListSection/>
         <ListSection/>
         <ListSection/>
         <ListSection/>
       </div>
       <div className="col-page">
-        <h2>columna 2</h2>
         <ListArticle/>
         <img src={'./images/home/AD_300x600(Middle2).png'}/>
         <ListArticle/>
