@@ -7,10 +7,10 @@ const ListArticle = (props) => {
         <Badge float={false}
                slug={'/tecnologia'}
                format={'f-2'}/>
-        <MediaObject/>
-        <MediaObject/>
-        <MediaObject/>
-        <MediaObject/>
+        <MediaObject format={'f-1'}/>
+        <MediaObject format={'f-1'}/>
+        <MediaObject format={'f-1'}/>
+        <MediaObject format={'f-1'}/>
     </article>
 };
 
