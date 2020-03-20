@@ -2,10 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 
 import Layout from "../layouts/default";
-import Card from "../components/global/card/default";
+//import Card from "../components/global/card/default";
 import ListSection from "../components/listSection/default";
 import ListArticle from "../components/listArticle/default";
 import Spotlight from "../components/spotlight/default";
+import OutstandingNews from "../components/outstandingNew/default";
 
 const Title = styled.h1`
   font-size: 35px;
@@ -21,11 +22,12 @@ const Home = () => {
     'url': '/tecnologia',
     'url_note': '/tecnologia/interna-tecnologia',
     'slug_img': 'https://imgmedia.elpopular.pe/310x160/elpopular/original/2020/03/14/5e6d21ef50a9a451291c92ab.jpg'
-  }
+  };
 
   return <Layout>
-    <Title>Home Page</Title>
     <Spotlight/>
+    <img src="./images/home/ads_top.jpg" alt=""/>
+    <OutstandingNews/>
     <img src={'./images/home/ads_middle.jpg'}/>
     <div className="wrapperFlex">
       <div className="col-page">

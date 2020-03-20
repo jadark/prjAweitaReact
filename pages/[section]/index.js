@@ -2,13 +2,16 @@ import React from 'react';
 import Layout from "../../layouts/default";
 import ListArticle from "../../components/listArticle/default";
 import MediaObject from "../../components/mediaObject/default";
+import Spotlight from "../../components/spotlight/default";
+import GridSection from "../../components/gridSection/default";
 
 const Section = () => {
   return <Layout>
-    <h1>Section Page</h1>
+    <Spotlight/>
+    <img src="./images/home/ads_top.jpg" alt=""/>
+    <GridSection/>
     <div className="wrapperFlex">
       <div className="col-page">
-        <h2>columna 1</h2>
         <MediaObject format={'f-2'}/>
         <MediaObject format={'f-2'}/>
         <MediaObject format={'f-2'}/>
