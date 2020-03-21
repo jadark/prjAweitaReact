@@ -14,10 +14,20 @@ const ContainerBody = styled.main`
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/fontawesome-webfont.eot');
+    src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/fontawesome-webfont.woff2') format('woff2'),
+        url('/fonts/fontawesome-webfont.woff') format('woff'),
+        url('/fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 `;
 
 const WrapperBody = styled.div`
-    //background-color: #eee;
     background-color:#fff;
     margin: auto;
     max-width: 1000px;
@@ -93,7 +103,8 @@ export default class DefaultLayout extends React.PureComponent {
           <title>Titular</title>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-          <script defer src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css"/>
+          <script defer src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js" />
         </NextHead>
         <Header/>
         <ContainerBody>
