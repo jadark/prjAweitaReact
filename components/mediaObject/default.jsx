@@ -50,7 +50,7 @@ const MediaObject = (props) => {
         'headline' : 'videojuegos',
         'url': '/videojuegos',
         'url_note': '/tecnologia/interna-tecnologia',
-        'slug_img': './images/internal/img_note_related.jpg',
+        'slug_img': '/images/internal/img_note_related.jpg',
     };
 
     let data2 = {
@@ -60,7 +60,7 @@ const MediaObject = (props) => {
         'body' : 'María Pía Copello le jala las orejas a Christian Domínguez y le recomienda que siente cabeza tras terminar con Isabel Acevedo.',
         'url': '/videojuegos',
         'url_note': '/tecnologia/interna-tecnologia',
-        'slug_img': './images/section/Media-Object-Section.png',
+        'slug_img': '/images/section/Media-Object-Section.png',
     };
     let showImage = null;
     let showTitle = null;

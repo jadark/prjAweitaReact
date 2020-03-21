@@ -24,6 +24,16 @@ const Home = () => {
     'slug_img': 'https://imgmedia.elpopular.pe/310x160/elpopular/original/2020/03/14/5e6d21ef50a9a451291c92ab.jpg'
   };
 
+  let dataMoreViews = {
+    'headline' : 'lo más visto',
+    'slug': '#',
+  };
+
+  let dataAnalysis = {
+    'headline' : 'Análisis',
+    'slug': '#',
+  };
+
   return <Layout>
     <Spotlight/>
     <img src="./images/home/ads_top.jpg" alt=""/>
@@ -38,9 +48,9 @@ const Home = () => {
         <ListSection/>
       </div>
       <div className="col-page">
-        <ListArticle/>
+        <ListArticle data={dataMoreViews}/>
         <img src={'./images/home/AD_300x600(Middle2).png'}/>
-        <ListArticle/>
+        <ListArticle data={dataAnalysis}/>
         <img src={'./images/home/AD_300x250_2.png'}/>
       </div>
     </div>

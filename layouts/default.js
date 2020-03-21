@@ -9,8 +9,8 @@ import Header from "../components/global/header/default";
 const ContainerBody = styled.main`
   @font-face {
     font-family: 'lemon_milkbold';
-    src: url('./fonts/lemonmilk-bold-webfont.woff2') format('woff2'),
-        url('./fonts/lemonmilk-bold-webfont.woff') format('woff');
+    src: url('/fonts/lemonmilk-bold-webfont.woff2') format('woff2'),
+        url('/fonts/lemonmilk-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
