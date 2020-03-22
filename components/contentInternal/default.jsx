@@ -4,12 +4,12 @@ import styled from "styled-components";
 const ContainerInternal = styled.div`
     p {
         color: #7f7f7f;
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 12px;
     }
     
     .container_interna {
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
         p {
             color: #000000;
             font-size: 16px;
@@ -29,7 +29,7 @@ const ContainerInternal = styled.div`
         span {
             color: #7f7f7f;
             display: block;
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 12px;
             margin-top: 10px;
             text-align: center;

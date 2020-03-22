@@ -22,7 +22,7 @@ const WrapperMinisite1000 = styled.div`
 `;
 
 const WrapperLogo = styled.div`
-  flex-grow: 0.955;
+  flex-grow: 1;
   flex-basis: 0;
   background-color: #242424;
   color:#fff;
@@ -78,7 +78,7 @@ const WrapperSocial = styled.div`
         line-height:1;
       }
       &:last-child{
-        padding-right:2.2rem;
+        padding-right:2.6rem;
       }
     }
   }
@@ -91,7 +91,7 @@ const WrapperSearch = styled.div`
   display: flex;
   padding:0 1.5rem 0 1rem;
   .fa-search{
-    font-size:2.2rem;
+    font-size:1.8rem;
   }
 `;
 

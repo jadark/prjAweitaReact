@@ -21,7 +21,7 @@ const ContainerNew = styled.div`
         
         p {
             color: #444444;
-            font-family: sans-serif;            
+            font-family: 'Roboto', sans-serif;            
         }
     }
     

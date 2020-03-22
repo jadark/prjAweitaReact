@@ -25,7 +25,7 @@ const ContainerMediaObject = styled.div`
         .date-publish {
             color: #777777;
             display: block;
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-size: 12px;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -33,7 +33,7 @@ const ContainerMediaObject = styled.div`
         
         p {
             color: #444444;
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
         }
     }

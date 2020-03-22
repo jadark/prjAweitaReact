@@ -25,6 +25,9 @@ const ContainerBody = styled.main`
     font-weight: normal;
     font-style: normal;
   }
+  *{
+    box-sizing: border-box;
+  }
 `;
 
 const WrapperBody = styled.div`
@@ -104,7 +107,8 @@ export default class DefaultLayout extends React.PureComponent {
           <meta name="viewport" content="width=device-width, user-scalable=no"/>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css"/>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/font-awesome-css.min.css" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"></link>
           <script defer src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js" />
         </NextHead>
         <Header/>

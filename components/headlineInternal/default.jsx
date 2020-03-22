@@ -23,12 +23,12 @@ const ContainerHeadline = styled.div`
         }
         
         p {
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
         
         a {
             color: #ff8a00;
-            font-family: sans-serif;            
+            font-family: 'Roboto', sans-serif;       
             font-weight: bold;
         }
     }
