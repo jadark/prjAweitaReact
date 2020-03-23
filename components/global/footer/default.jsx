@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
 
-const ContainerFooter = styled.div`
+const ContainerFooter = styled.footer`
     background: #eee;
     margin: auto;
     max-width: 1000px;
     width: 100%;
-    
     p {
       font-size: 15px;
     }
@@ -142,35 +141,35 @@ const Footer = (props) => {
         <ul>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/GLR.png'}/>
+              <img className="icon_band" src={'/images/home/GLR.png'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/RTV.png'}/>
+              <img className="icon_band" src={'/images/home/RTV.png'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/la_republica.png'}/>
+              <img className="icon_band" src={'/images/home/la_republica.png'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/libero.png'}/>
+              <img className="icon_band" src={'/images/home/libero.png'}/>
             </a>
           </li>
           <li>
-            <img className="icon_band" src={'./images/home/wapa.png'}/>
+            <img className="icon_band" src={'/images/home/wapa.png'}/>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/el_popular.png'}/>
+              <img className="icon_band" src={'/images/home/el_popular.png'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_band" src={'./images/home/cuponidad.png'}/>
+              <img className="icon_band" src={'/images/home/cuponidad.png'}/>
             </a>
           </li>
         </ul>
@@ -179,17 +178,17 @@ const Footer = (props) => {
         <ul>
           <li>
             <a href="http://">
-              <img className="icon_facebook" src={'./images/home/logo_facebook.svg'}/>
+              <img className="icon_facebook" src={'/images/home/logo_facebook.svg'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_twitter" src={'./images/home/logo_twitter.svg'}/>
+              <img className="icon_twitter" src={'/images/home/logo_twitter.svg'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_instagram" src={'./images/home/logo_instagram.svg'}/>
+              <img className="icon_instagram" src={'/images/home/logo_instagram.svg'}/>
             </a>
           </li>
         </ul>
@@ -229,7 +228,9 @@ const Footer = (props) => {
         </ul>
       </div>
       <div className="wrapper_logo">
-        <img src={'./images/home/aveita_logo_footer.png'} />
+        <a href="/">
+          <img src={'/images/home/aveita_logo_footer.png'} />
+        </a>
         <p className="copyright">©Todos los derechos reservados - 2020</p>
       </div>
     </WrapperMainHeader>

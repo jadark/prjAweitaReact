@@ -95,27 +95,68 @@ const WrapperSearch = styled.div`
   }
 `;
 
+const WrapperNavMenu = styled.nav`
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  .menu{
+    position: relative;
+    display: flex;
+    margin:0;
+    padding:20px 15px 16px;
+    list-style:none;
+    width:100%;
+    justify-content: space-between;
+    &:before{
+      content:'';
+      display: block;
+      position: absolute;
+      width:100%;
+      height: 5px;
+      left:0;
+      top:0;
+      background: linear-gradient(to right, rgba(255,52,130,1) 0%, rgba(255,234,71,1) 39%, rgba(50,255,125,1) 68%, rgba(60,130,228,1) 100%);
+    }
+    li{
+      padding:0;
+      margin:0;
+      text-align:center;
+      font-family: 'lemon_milkbold';
+      text-transform:uppercase;
+      line-height:1;
+      a{
+        text-decoration:none;
+        line-height:1;
+        color:#242424;
+      }
+    }
+  }
+`;
+
 const Header = () => {
   return <ContainerHeader>
     <WrapperMinisite1000>
       <WrapperLogo>
-        <img className="logo" src={'./images/home/aweita_logo.png'}/>
+        <a href="/">
+          <img className="logo" src={'/images/home/aweita_logo.png'}/>
+        </a>
       </WrapperLogo>
       <WrapperSocial>
         <ul>
           <li>
             <a href="http://">
-              <img className="icon_facebook" src={'./images/home/logo_facebook.svg'}/>
+              <img className="icon_facebook" src={'/images/home/logo_facebook.svg'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_twitter" src={'./images/home/logo_twitter.svg'}/>
+              <img className="icon_twitter" src={'/images/home/logo_twitter.svg'}/>
             </a>
           </li>
           <li>
             <a href="http://">
-              <img className="icon_instagram" src={'./images/home/logo_instagram.svg'}/>
+              <img className="icon_instagram" src={'/images/home/logo_instagram.svg'}/>
             </a>
           </li>
         </ul>
@@ -124,6 +165,15 @@ const Header = () => {
         <i className="fa fa-search"></i>
       </WrapperSearch>
     </WrapperMinisite1000>
+    <WrapperNavMenu>
+      <ul className="menu">
+        <li><a href="#">Videojuegos</a></li>
+        <li><a href="#">Tecnología</a></li>
+        <li><a href="#">Peliculas</a></li>
+        <li><a href="#">Anume, manga y comics</a></li>
+        <li><a href="#">podcats</a></li>
+      </ul>
+    </WrapperNavMenu>
   </ContainerHeader>
 }
 
