@@ -6,7 +6,11 @@ import Spotlight from "../../components/spotlight/default";
 import GridSection from "../../components/gridSection/default";
 
 const Section = () => {
-  return <Layout>
+  let dataHeader = {
+    'slug': 'tecnologia',
+  };
+
+  return <Layout data={dataHeader}>
     <Spotlight/>
     <img src="./images/home/ads_top.jpg" alt=""/>
     <GridSection/>

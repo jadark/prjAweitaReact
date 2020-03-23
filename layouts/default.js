@@ -100,6 +100,12 @@ export default class DefaultLayout extends React.PureComponent {
   }
 
   render() {
+    let dataHeader = null;
+
+    if( this.props.data ) {
+      dataHeader = this.props.data;
+    }
+
     return (
       <React.Fragment>
         <NextHead>
@@ -111,7 +117,7 @@ export default class DefaultLayout extends React.PureComponent {
           <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"></link>
           <script defer src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js" />
         </NextHead>
-        <Header/>
+        <Header data={dataHeader}/>
         <ContainerBody>
           <WrapperBody>
             {this.props.children}

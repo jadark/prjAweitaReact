@@ -134,7 +134,13 @@ const WrapperNavMenu = styled.nav`
   }
 `;
 
-const Header = () => {
+const Header = (props) => {
+  if ( props.data ) {
+    console.log('========= data : ',props.data);
+  } else {
+    console.log('========= no tengo data');
+  }
+
   return <ContainerHeader>
     <WrapperMinisite1000>
       <WrapperLogo>
